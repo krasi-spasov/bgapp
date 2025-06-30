@@ -14,7 +14,7 @@ services:
 
     volumes:
 
-      - "/home/vagrant/bgapp/web:/var/www/html:ro"
+      - "${PROJECT_ROOT}:/var/www/html:ro"
 
     networks:
 
@@ -38,7 +38,7 @@ services:
 
     environment:
 
-      MYSQL_ROOT_PASSWORD: "12345"
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
 
 networks:
 
