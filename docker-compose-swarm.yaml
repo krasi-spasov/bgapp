@@ -2,10 +2,10 @@ services:
 
   web:
 
-    image: krasko84/bgapp-web
+    image: krasko84/bgapp-web1
     
     deploy:
-        replicas: 5
+        replicas: 3
 
     ports:
 
